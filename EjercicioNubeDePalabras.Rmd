@@ -37,9 +37,7 @@ Ahora necesitamos filtrar **stop words** en varios idiomas (porque no solo hay c
 1. _Ejecuten este código tal cual se presenta._ 
 
 ```{r}
-idiomas <- list('spanish', 'portuguese')
-
-# list('spanish', 'portuguese', 'french', 'danish', 'dutch', 'finnish', 'german', 'hungarian', 'italian', 'norwegian', 'russian', 'swedish')
+idiomas <- list('spanish', 'portuguese', 'french', 'danish', 'dutch', 'finnish', 'german', 'hungarian', 'italian', 'norwegian', 'russian', 'swedish')
 
 variosIdiomas_stop_words <- idiomas %>%
   map(tm::stopwords) %>%
